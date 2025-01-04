@@ -1,7 +1,7 @@
 [project]
-name = "comfyui-bongsang"
-description = "Bongsang is very useful tools for a diffusion model developer."
-version = "1.0.0"
+name = "bongsang"
+description = "The 'ComfyUI-Bongsang' is very useful tools for a diffusion model developer."
+version = "1.0.2"
 license = {file = "LICENSE"}
 
 [project.urls]
