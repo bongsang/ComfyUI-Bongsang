@@ -1,0 +1,14 @@
+[project]
+name = "comfyui-bongsang"
+description = "Bongsang is very useful tools for a diffusion model developer."
+version = "1.0.0"
+license = {file = "LICENSE"}
+
+[project.urls]
+Repository = "https://github.com/bongsang/ComfyUI-Bongsang"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = "bongsang"
+DisplayName = "ComfyUI-Bongsang"
+Icon = "https://raw.githubusercontent.com/crystian/ComfyUI-Bongsang/main/docs/app_icon.png"
