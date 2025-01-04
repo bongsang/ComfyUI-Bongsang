@@ -11,4 +11,4 @@ Repository = "https://github.com/bongsang/ComfyUI-Bongsang"
 [tool.comfy]
 PublisherId = "bongsang"
 DisplayName = "ComfyUI-Bongsang"
-Icon = "https://raw.githubusercontent.com/crystian/ComfyUI-Bongsang/main/docs/app_icon.png"
+Icon = "https://raw.githubusercontent.com/bongsang/ComfyUI-Bongsang/main/docs/app_icon.png"
