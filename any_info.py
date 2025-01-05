@@ -1,3 +1,8 @@
+"""
+Author: bongsang
+LinkedIn: linkedin.com/in/bongsang
+GitHub: github.com/bongsang
+"""
 import json
 from comfy.comfy_types import IO
 from .libs.types import any

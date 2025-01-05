@@ -4,28 +4,73 @@
 
 ---
 
+## Installation
+
+ComfyUI-Bongsang consolidates all custom nodes into a single package for ease of use.
+
+- **ComfyUI and CLI**: Read how to install ComfyUI via CLI: [comfy-cli/getting-started](https://docs.comfy.org/comfy-cli/getting-started)
+- Install custom node, ***bongsang***
+
+```
+comfy node registry-install bongsang
+```
+
+
 ## Features
 
 ### 1. **"Any Info" Node**
 
-The **"Any Info"** node allows you to inspect various types of data, including strings, numbers, and images, with a single connection. This functionality saves time and ensures seamless data handling during development.
+The **Any Info** node enables seamless inspection of various data types, including strings, numbers, and images, through a single connection. This feature streamlines workflows and saves valuable development time.
 
-#### String Example
+#### Example for String Input Type
 
-With the **"Any Info"** node, you can visualize string outputs effortlessly:
+With the **Any Info** node, you can visualize string outputs effortlessly:
 
-![String Example](docs/any_info_screen1.png)
+![snapshot-1](docs/any_info_snapshot_1.png)
 
-#### Image Example
+#### Example for Image Input Type
 
-Inspect image outputs in real-time using the **"Any Info"** node:
+Inspect image outputs in real-time using the **Any Info** node:
 
-![Image Example](docs/any_info_screen2.png)
+![snapshot-2](docs/any_info_snapshot_2.png)
 
 ---
 
-### Why Use ComfyUI-Bongsang?
 
-- **Versatility**: Handle multiple data types within a single node.
-- **Efficiency**: Streamline debugging and development processes.
-- **Ease of Use**: Simple integration into your existing workflow.
+### 2. **"RGB Channel" Node**
+
+The **RGB Channel** node splits an input image into its three RGB channels: **Red**, **Green**, and **Blue**. Each channel is normalized for better clarity, allowing users to distinguish between pure colors and white regions.
+
+#### How It Works
+
+- Normalization:
+Each channel value is divided by the maximum intensity (max_intensity) across all channels for every pixel. This ensures that areas with high intensity in all channels (e.g., white regions) appear dimmer, highlighting pure red, green, or blue areas.
+
+- Channel Separation:
+Each channel (R, G, B) is placed in the corresponding slot (0, 1, or 2) while the other channels remain zero.
+
+
+#### Understanding Color Channels
+
+Split a simple RGB representation image into its Red, Green, and Blue channels:
+
+![RGB Channel Example](docs/rgb_channel_snapshot_1.png)
+
+#### Example for Real-World Image
+
+Applied to a real-world image, the **RGB Channel** node highlights the contributions of each channel:
+
+- Red Channel: Displays red intensity.
+- Green Channel: Displays green intensity.
+- Blue Channel: Displays blue intensity.
+
+
+![Real-World Example](docs/rgb_channel_snapshot_2.png)
+
+---
+
+## Contacts
+
+For collaboration opportunities, feel free to connect:
+
+[LinkedIn - Bongsang](https://www.linkedin.com/in/bongsang/)
